@@ -1,5 +1,5 @@
-require 'item'
-
+#!/usr/bin/env ruby
+require_relative 'item'
 def menu
   puts '
       M E N U
@@ -39,5 +39,4 @@ def main
     end
   end
 end
-main = Main.new
-main.main
+main
