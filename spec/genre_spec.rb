@@ -29,7 +29,7 @@ RSpec.describe Genre do
 
     it 'should add self as a property of the item object' do
       @genre.add_item(@item)
-      expect(@genre.items).to eql [@item]
+      expect(@genre.items).to include(@item)
     end
   end
 end
