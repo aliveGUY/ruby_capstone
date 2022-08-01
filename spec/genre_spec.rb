@@ -15,11 +15,11 @@ RSpec.describe Genre do
 
   describe '#add_item' do
     before :each do
-      @item = Item.new(10)
+      @item = Item.new(publish_date: '01-01-2002')
     end
 
     it 'should take an instance of the Item class as an input' do
-      expect{@genre.add_item(@item)}.not_to raise_error
+      expect { @genre.add_item(@item) }.not_to raise_error
     end
 
     it 'should add the input item to the collection of items' do

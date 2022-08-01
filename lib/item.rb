@@ -1,10 +1,12 @@
+require 'date'
+
 class Item
   attr_reader :id, :archived, :genre, :author, :source, :label
   attr_accessor :publish_date
 
-  def initialize(publish_date)
+  def initialize(publish_date:)
     @id = Random.rand(1..100)
-    @publish_date = publish_date
+    @publish_date = Date.parse(publish_date)
     @archived = false
   end
 
@@ -31,7 +33,7 @@ class Item
   private
 
   def can_be_archived?
-    return true if @publish_date > 10
+    return true if (Date.today - @publish_date) / 365 > 10
 
     false
   end
