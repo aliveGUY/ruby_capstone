@@ -12,22 +12,22 @@ class Item
 
   def add_genre(genre)
     @genre = genre
-    genre.items << self
+    genre.items.push(self) unless genre.items.include?(self) 
   end
 
   def add_author(author)
     @author = author
-    author.items << self
+    author.items.push(self) unless author.items.include?(self) 
   end
 
   def add_source(source)
     @source = source
-    source.items << self
+    source.items.push(self) unless source.items.include?(self) 
   end
 
   def add_label(label)
     @label = label
-    label.items << self
+    label.items.push(self) unless label.items.include?(self) 
   end
 
   private
