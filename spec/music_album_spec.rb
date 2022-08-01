@@ -18,8 +18,8 @@ RSpec.describe MusicAlbum do
     end
 
     it 'should return true if parent`s method returns true AND if on_spotify equals true' do
-      @music_album.on_spotify = false
-      expect(@music_album.can_be_archived?).to eql false
+      @music_album.on_spotify = true
+      expect(@music_album.can_be_archived?).to eql true
     end
 
     it 'otherwise, it should return false' do
