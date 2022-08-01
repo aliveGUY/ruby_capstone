@@ -1,5 +1,4 @@
 require_relative '../lib/music_album'
-require_relative '../lib/item'
 
 RSpec.describe MusicAlbum do
   before :each do
