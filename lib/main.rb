@@ -15,6 +15,7 @@ def menu
   10) Add a music album
   11) Add a movie
   12) Add a game
+  13) Exit
   '
 end
 
@@ -30,10 +31,11 @@ def main
       # @app.list_people
     when '3'
       # @app.create_person
-    when '4'
+    when '13'
       # @app.create_book
-    else
       break
+    else
+      puts 'please enter a valid option'
     end
   end
 end
