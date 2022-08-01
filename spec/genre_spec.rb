@@ -10,8 +10,7 @@ RSpec.describe Genre do
   end
 
   describe '#add_item' do
-
-    let(:item) { double('Item')}
+    let(:item) { double('Item') }
     before :each do
       allow(item).to receive(:add_genre)
     end
