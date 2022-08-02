@@ -5,7 +5,7 @@ require_relative '../modules/menu/menu'
 
 class Main
   include Menu
-  def run
+  def run # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
     app = App.new
     loop do
       main_menu
@@ -13,11 +13,15 @@ class Main
 
       case input
       when '1'
-        # game_menu(app)
+        app.list_books
       when '4'
         app.list_games
+      when '6'
+        app.list_label
       when '7'
         app.list_authors
+      when '9'
+        book_menu(app)
       when '12'
         game_menu(app)
       when '13'
