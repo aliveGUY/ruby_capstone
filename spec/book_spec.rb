@@ -24,7 +24,7 @@ RSpec.describe Book do
       expect(book.archived).to eq true
     end
 
-    it 'Book publisher should be equal to "Emilia"' do
+    it 'Book cover should be equal to "bad"' do
       expect(book_cover).to eq('bad')
     end
   end
