@@ -1,4 +1,4 @@
-require_relative '../lib/genre'
+require_relative '../../lib/genre'
 
 RSpec.describe Genre do
   let(:genre) { Genre.new('foo') }

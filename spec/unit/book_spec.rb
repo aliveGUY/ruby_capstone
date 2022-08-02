@@ -1,4 +1,4 @@
-require_relative '../lib/book'
+require_relative '../../lib/book'
 
 RSpec.describe Book do
   context 'When testing book that can not be archived' do

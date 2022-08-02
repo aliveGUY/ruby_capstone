@@ -1,4 +1,4 @@
-require_relative '../lib/label'
+require_relative '../../lib/label'
 
 RSpec.describe Label do
   context 'When testig Label class' do
