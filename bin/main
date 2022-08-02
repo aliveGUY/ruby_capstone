@@ -5,7 +5,7 @@ require_relative '../modules/menu/menu'
 
 class Main
   include Menu
-  def run
+  def run # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
     app = App.new
     loop do
       main_menu
