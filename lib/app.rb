@@ -43,6 +43,8 @@ class App
 
   def create_album(publish_date, on_spotify)
     @albums << MusicAlbum.new(publish_date: publish_date, on_spotify: on_spotify)
+  end
+
   # label and book
   def list_label
     @label.each do |label|
