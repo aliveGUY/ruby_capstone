@@ -10,10 +10,7 @@ class Main
     loop do
       main_menu
       input = gets.chomp
-
       case input
-      when '2'
-        app.list_all_music_albums
       when '4'
         app.list_games
       when '7'

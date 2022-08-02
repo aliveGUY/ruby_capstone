@@ -30,7 +30,6 @@ class App
     end
   end
 
-
   def list_all_genres
     puts 'not implemented yet'
   end
