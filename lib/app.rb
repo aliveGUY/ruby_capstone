@@ -1,10 +1,12 @@
 require_relative 'game'
+require_relative 'music_album'
 require_relative 'book'
 
 class App
   def initialize
     @games = []
     @authors = []
+    @albums = []
     @books = []
     @label = []
   end
@@ -25,8 +27,22 @@ class App
     end
   end
 
+  def list_all_music_albums
+    @albums.each_with_index do |album, i|
+      puts "#{i + 1}) published at: #{album.publish_date} #{album.on_spotify ? 'on spotify' : ''}"
+    end
+  end
+
+  def list_all_genres
+    puts 'not implemented yet'
+  end
+
   def create_game(publish_date, multiplayer, last_played_at)
     @games << Game.new(publish_date: publish_date, multiplayer: multiplayer, last_played_at: last_played_at)
+  end
+
+  def create_album(publish_date, on_spotify)
+    @albums << MusicAlbum.new(publish_date: publish_date, on_spotify: on_spotify)
   end
 
   # label and book

@@ -10,7 +10,6 @@ class Main
     loop do
       main_menu
       input = gets.chomp
-
       case input
       when '1'
         app.list_books
@@ -20,6 +19,8 @@ class Main
         app.list_label
       when '7'
         app.list_authors
+      when '10'
+        album_menu(app)
       when '9'
         book_menu(app)
       when '12'
