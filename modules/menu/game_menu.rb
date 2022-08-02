@@ -1,7 +1,6 @@
 module Menu
   def game_menu(app)
-    puts 'Enter the publish date: [YYYY-MM-DD]'
-    publish_date = gets.chomp
+    publish_date = validate_date('Enter the publish date: [YYYY-MM-DD]', '%Y-%m-%d')
     puts 'Is multiplayer?: [Y/N]'
     multiplayer = gets.chomp
     puts 'When was it last played?: [YYYY-MM-DD]'

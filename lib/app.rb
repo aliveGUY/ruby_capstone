@@ -1,10 +1,12 @@
 require_relative 'game'
 require_relative 'music_album'
 require_relative 'book'
+require_relative '../modules/storage/storage'
 
 class App
+  include Storage
   def initialize
-    @games = []
+    @games = read_games
     @authors = []
     @albums = []
     @books = []
@@ -60,5 +62,9 @@ class App
 
   def create_book(publish_date, publisher, cover_state)
     @books << Book.new(publish_date, publisher, cover_state)
+  end
+
+  def save_data
+    write_games
   end
 end
