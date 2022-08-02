@@ -3,7 +3,7 @@ module Menu
     puts 'Enter the publish date: [YYYY-MM-DD]'
     output = gets.chomp
     output = validate if output.match(/\d{4}-(?:[01][0-2])-(?:[01][0-9]|2[0-9]|3[0-1])/).nil?
-    return output
+    output
   end
 
   def album_menu(app)
