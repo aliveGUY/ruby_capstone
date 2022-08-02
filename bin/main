@@ -13,6 +13,8 @@ class Main
       case input
       when '1'
         app.list_books
+      when '2'
+        app.list_all_music_albums
       when '4'
         app.list_games
       when '6'
@@ -26,7 +28,7 @@ class Main
       when '12'
         game_menu(app)
       when '13'
-        # @app.create_book
+        app.save_data
         break
       else
         puts 'please enter a valid option'
