@@ -5,18 +5,30 @@ require_relative '../modules/menu/menu'
 
 class Main
   include Menu
-  def run
+  def run # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
     app = App.new
     loop do
       main_menu
       input = gets.chomp
       case input
+<<<<<<< HEAD
+=======
+      when '1'
+        app.list_books
+>>>>>>> dev
       when '4'
         app.list_games
+      when '6'
+        app.list_label
       when '7'
         app.list_authors
+<<<<<<< HEAD
       when '10'
         album_menu(app)
+=======
+      when '9'
+        book_menu(app)
+>>>>>>> dev
       when '12'
         game_menu(app)
       when '13'

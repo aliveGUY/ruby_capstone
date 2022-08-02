@@ -1,11 +1,20 @@
 require_relative 'game'
+<<<<<<< HEAD
 require_relative 'music_album'
+=======
+require_relative 'book'
+>>>>>>> dev
 
 class App
   def initialize
     @games = []
     @authors = []
+<<<<<<< HEAD
     @albums = []
+=======
+    @books = []
+    @label = []
+>>>>>>> dev
   end
 
   def list_authors
@@ -38,7 +47,25 @@ class App
     @games << Game.new(publish_date: publish_date, multiplayer: multiplayer, last_played_at: last_played_at)
   end
 
+<<<<<<< HEAD
   def create_album(publish_date, on_spotify)
     @albums << MusicAlbum.new(publish_date: publish_date, on_spotify: on_spotify)
+=======
+  # label and book
+  def list_label
+    @label.each do |label|
+      puts "ID: #{label.id}, Title: #{label.title}, Color: #{label.color}, Items: #{label.items}"
+    end
+  end
+
+  def list_books
+    @books.each do |book|
+      puts "Publish date: #{book.publish_date}, Publisher: #{book.publisher}, Cover state: #{book.cover_state}"
+    end
+  end
+
+  def create_book(publish_date, publisher, cover_state)
+    @books << Book.new(publish_date, publisher, cover_state)
+>>>>>>> dev
   end
 end
