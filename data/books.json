@@ -1,5 +1,6 @@
 [
   {
+    "id": 40,
     "publish_date": "2020-01-01",
     "publisher": "Emilia",
     "cover_state": "bad"
@@ -9,9 +10,4 @@
     "publisher": "Juan",
     "cover_state": "bad"
   },
-  {
-    "publish_date": "1111-11-11",
-    "publisher": "werwe",
-    "cover_state": "good"
-  }
 ]
