@@ -1,12 +1,8 @@
 [
   {
+    "id": 40,
     "publish_date": "2020-01-01",
     "publisher": "Emilia",
-    "cover_state": "bad"
-  },
-  {
-    "publish_date": "2021-05-05",
-    "publisher": "Juan",
-    "cover_state": "bad"
+    "cover_state": "good"
   }
 ]
