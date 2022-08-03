@@ -8,7 +8,7 @@ class App
   def initialize
     @games = read_games
     @authors = []
-    @albums = []
+    @albums = read_albums
     @books = read_books
     @label = []
   end
@@ -66,6 +66,7 @@ class App
 
   def save_data
     write_games
+    write_albums
     save_books(@books)
   end
 end
