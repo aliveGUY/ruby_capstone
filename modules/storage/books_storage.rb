@@ -7,7 +7,8 @@ module Storage
     data = []
     if File.exist?(file) && File.read(file) != ''
       JSON.parse(File.read(file)).each do |element|
-        data.push(Book.new(element['publish_date'], element['publisher'], element['cover_state']))
+        data.push(Book.new(element['publish_date'], element['publisher'], element['cover_state'],
+                           id: element['id'].to_i))
       end
     end
     data
@@ -16,7 +17,8 @@ module Storage
   def save_books(books)
     data = []
     books.each do |book|
-      data.push({ publish_date: book.publish_date, publisher: book.publisher, cover_state: book.cover_state })
+      data.push({ id: book.id, publish_date: book.publish_date, publisher: book.publisher,
+                  cover_state: book.cover_state })
     end
     File.write('data/books.json', JSON.pretty_generate(data))
   end
