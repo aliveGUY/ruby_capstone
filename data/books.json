@@ -8,5 +8,10 @@
     "publish_date": "2021-05-05",
     "publisher": "Juan",
     "cover_state": "bad"
+  },
+  {
+    "publish_date": "1111-11-11",
+    "publisher": "werwe",
+    "cover_state": "good"
   }
 ]

@@ -12,20 +12,13 @@ module Menu
     end
   end
 
-  def validate_date(text, range)
-    loop do
-      print text
-      input = gets.chomp
-      format_ok = input.match(/\d{4}-\d{2}-\d{2}/)
-      parsable = begin
-        Date.strptime(input, range)
-      rescue StandardError
-        false
-      end
-
-      return input if format_ok && parsable
-
-      puts 'Invalid date, please enter a valid format: '
+  def validate_date(text)
+    puts text
+    output = gets.chomp
+    if output.match(/\d{4}-(?:[01][0-2])-(?:[01][0-9]|2[0-9]|3[0-1])/).nil?
+      puts 'please enter correct input'
+      output = validate_date(text)
     end
+    output
   end
 end
