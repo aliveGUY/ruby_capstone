@@ -1,57 +1,70 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Ruby Capstone
 
-> Description the project.
+> In this project, we created a console app that help user to keep a record of different types of things he won: books, music albums, and games. The data is stored in JSON files but we also prepared a database with tables structure analogical to our program's class structure.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- SQL
+- GitHub
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-### Setup
+- Clone this repository to your computer: git clone git@github.com:aliveGUY/ruby_capstone.git
+- Open the project on your code editor: "code ruby_capstone"
+- Write: bundle install
+- To run the app: 
+    - Linux: bin/main
+    - Windows: ruby bin/main
+- To test the app:
+    - rspec (general)
+    - rspec spec/unit/name_of_sile (specific one)
 
-### Install
 
-### Usage
+## Project requirements
 
-### Run tests
+### General requirements
 
-### Deployment
+- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
+- Make sure that you used correct [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md).
+- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+
+### Ruby requirements
+
+- Follow our list of [best practices for Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/articles/ruby_best_practices.md).
+
 
 ## Authors
 
-👤 **Author1**
+👤 **Illia Dobrovin**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@aliveGUY](https://github.com/aliveGUY)
+- Twitter: [@Sciborskyy](https://twitter.com/Sciborskyy)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/illia-dubrovin-921a2721b/)
 
-👤 **Author2**
+👤 **Andres Agudelo Guzman**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@anagudelogu](https://github.com/anagudelogu)
+- Twitter: [@AgudeloAndres__](https://twitter.com/AgudeloAndres__)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aagst/)
+
+👤 **Emilia Zambrano**
+
+- GitHub: [@emiliazm](https://github.com/emiliazm)
+- Twitter: [@emilia_zm](https://twitter.com/emilia_zm)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emiliazm/)
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/aliveGUY/ruby_capstone/issues).
 
 ## Show your support
 
@@ -59,9 +72,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse README template.
 
 ## 📝 License
 
